@@ -2,12 +2,15 @@ import { useState } from 'react'
 import reactLogo from '/src/assets/react.svg'
 import viteLogo from '/vite.svg'
 import '../css/App.css'
+import Header from '../components/header/header.tsx'
+import Footer from '../components/footer/footer.tsx'
 
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Header />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -28,6 +31,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer />
     </>
   )
 }
